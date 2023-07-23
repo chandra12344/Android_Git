@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/quizlayout"
+    android:visibility="visible"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00f"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Quiz Test App"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Subject Name : Android"
+            android:textSize="16dp"
+            android:layout_gravity="start"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Total Question: 7"
+            android:gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextm"
+        android:background="@drawable/buttonborders1"
+        android:backgroundTint="#00f"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Next" />
+</androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/result"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#08FF00"
+            android:layout_marginStart="10dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/c_count"
+            android:text="Currect : 5"
+            android:textSize="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i_count"
+            android:text="Currect : 5"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sCount"
+            android:text="Currect : 5"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/finish"
+            android:text="Finish"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

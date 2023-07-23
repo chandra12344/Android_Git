@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text=" 1. You can create an emulator to simulate the configur ation of a particular type of Android device using a tool like"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:id="@+id/option1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonborders"
+        android:gravity="start"
+        android:text="OPtion1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/option2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonborders"
+        android:gravity="start"
+        android:text="OPtion1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/option3"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonborders"
+        android:gravity="start"
+        android:text="OPtion1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/option4"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonborders"
+        android:gravity="start"
+        android:text="OPtion1" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next"
+        android:background="@drawable/buttonborders1"
+        android:backgroundTint="#00f"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Next" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
